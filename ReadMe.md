@@ -17,19 +17,22 @@ Install webserver for Fast API:
 db setup:  
 ```pip install sqlalchemy```
 
-hash password
-#### pip install passlib["bcrypt"]
+hash password  
+```pip install passlib["bcrypt"]```
 
-jwt setup
-#### pip install "python-jose[cryptography]"
+jwt setup  
+```pip install "python-jose[cryptography]"```
 
-##### pip install python-multipart
+```pip install python-multipart```
 
+Run the Fast API application  
+```uvicorn main:app --reload```
 
-run the Fast API application
-#### uvicorn main:app --reload
+Access the Swagger document on: http://127.0.0.1:8000/docs
 
-Access the Swagger document on:
+Authenticate using the following credentials:
+#### username: ```test```
+#### password: ```test1234```
 
 ![alt text](/images/fast_api_main.png)
 
